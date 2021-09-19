@@ -76,6 +76,10 @@ body {
     display: block;
 }
 
+.active {
+    display: none;
+}
+
 .aside {
     width: 30%;
     background: var(--aside-background);
@@ -425,6 +429,9 @@ body {
     .contacts-list-row, .skills-list-row {
         margin-right: 60px;
     }
+    .active {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -473,6 +480,7 @@ body {
         display: block;
     }
 }
+
 
 
 
