@@ -41,6 +41,7 @@ body {
     font-size: 22px;
     line-height: 50px;
     transition: all .4s linear;
+    scroll-behavior: smooth;
 }
 
 .navbar-menu {
@@ -231,6 +232,7 @@ body {
 .about-me-header, .education-header, .projects-header {
     padding-bottom: 30px;
     display: flex;
+    align-items: center;
 }
 
 .education-title {
