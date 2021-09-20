@@ -16,8 +16,6 @@ html {
 }
 
 body {
-    max-width: 1024px;
-    min-width: 600px;
     margin: 0 auto;
     padding: 15px;
     background-color: var(--page-color);
@@ -25,7 +23,9 @@ body {
 }
 
 .header {
+    max-width: 1024px;
     padding-bottom: 15px;
+    margin: 0 auto;
 }
 
 .navbar, .navbar-menu {
@@ -59,7 +59,7 @@ body {
 }
 
 .burger-img {
-    width: 30px;
+    width: 45px;
     cursor: pointer;
 }
 
@@ -371,6 +371,11 @@ body {
 }
 
 .footer {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.footer-items {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -404,10 +409,45 @@ body {
     display: none;
 }
 
+.none {
+    display: none;
+}
+
+@media (max-width: 935px) {
+    .table-td:nth-child(2) {
+        min-width: 250px;
+    }
+    .table-td-higher:nth-child(2) {
+        min-width: 200px;
+    }
+    .body {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
+
+@media (max-width: 835px) {
+    .table-td:nth-child(1) {
+        max-width: 15%;
+    }
+}
+
+
 @media screen and (max-width: 775px) {
     .container {
         display: flex;
         flex-direction: column;
+    }
+    .body {
+        max-width: 80%;
     }
     .aside, .main, .me {
         width: 100%;
@@ -434,27 +474,6 @@ body {
     }
 }
 
-@media (max-width: 600px) {
-    .me-img {
-        margin-right: 35px;
-    }
-}
-
-@media (max-width: 935px) {
-    .table-td:nth-child(2) {
-        min-width: 250px;
-    }
-    .table-td-higher:nth-child(2) {
-        min-width: 200px;
-    }
-}
-
-@media (max-width: 835px) {
-    .table-td:nth-child(1) {
-        max-width: 15%;
-    }
-}
-
 @media (max-width: 725px) {
     .projects-img {
         width: 100%;
@@ -470,16 +489,47 @@ body {
     .projects {
         margin-bottom: 0;
     }
+    .logo-course {
+        width: 20%;
+    }
 }
 
-@media (max-width: 900px) {
-    .navbar {
-        display: none;
+
+@media (max-width: 600px) {
+    .me-img {
+        margin-right: 35px;
     }
-    .burger {
+    .logo-course {
+        width: 23%;
+    }
+}
+
+@media (max-width: 550px) {
+    .contacts-list, .skills-list {
         display: block;
     }
 }
+
+@media (max-width: 470px) {
+    .me>h5 {
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    .me-img {
+        margin-right: 10px;
+    }
+    .logo-course {
+        width: 35%;
+    }
+    .block {
+        display: none;
+    }
+    .none {
+        display: block;
+    }
+}
+
+
 
 
 
